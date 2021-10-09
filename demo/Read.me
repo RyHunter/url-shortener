@@ -1,0 +1,36 @@
+Spring Boot based REST API that takes a URL and returns a shortened URL.
+Using Mongodb to persist data.
+
+
+To get started run
+
+java -jar target/shortnr-0.0.1-SNAPSHOT.jar
+
+
+
+API Endpoints
+You can access following API endpoints at http://localhost:8080
+
+POST /shorten
+It takes a raw text object as payload and returns the shortened version.
+
+example: www.google.com/averygoodexample
+
+
+GET /getNumTimesUsed/{path variable}
+
+Path variable: shortened URL 
+
+This endpoint tells us how many times the shortened URL has been used.
+
+example: http://localhost:8080/getNumTimesUsed/Nn43Nq
+
+
+
+GET /getOriginal/{path variable}
+
+Path variable: shortened URL 
+
+This endpoint converts to the corresponding shortened URL.
+
+http://localhost:8080/getOriginal/Nn43Nq

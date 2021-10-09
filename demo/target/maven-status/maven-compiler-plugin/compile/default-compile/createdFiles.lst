@@ -1,0 +1,5 @@
+com\shortnr\service\UrlService.class
+com\shortnr\ShortnrApplication.class
+com\shortnr\controller\UrlController.class
+com\shortnr\repository\UrlRepository.class
+com\shortnr\model\UrlEntity.class
